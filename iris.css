@@ -1,0 +1,36 @@
+/*Can't use vanilla css variables in media queries*/
+
+body {
+  border: solid purple 4px;
+  padding: 0;
+  margin: 0;
+}
+
+#iris-wrapper-1 {
+  border: solid grey 4px;
+}
+
+#iris-wrapper-2 {
+  border: solid black 4px;
+}
+
+#iris-wrapper-3 {
+  border: solid red 4px;
+}
+
+.iris-wrapper {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 100px;
+  min-height: 100px;
+  width: 480px;
+  height: 480px;
+}
+
+@media only screen and ( max-width: 600px ) {
+  .iris-wrapper {
+    width: 100%;
+    height: auto;
+  }
+}
